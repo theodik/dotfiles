@@ -1,7 +1,5 @@
-export LC_ALL='cs_CZ.utf8'
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
 if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
   export TERM=xterm-256color
@@ -40,14 +38,9 @@ alias cdr='cd $(git rev-parse --show-cdup)'
 
 alias gst='git status'
 
-export redxml="cd $HOME/Dropbox/projects/redxml-project/"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 export EDITOR=vim
 # vypnout ctrl-s a ctrl-q aby šlo ukládat ve vimu přes ctrl-s
 stty -ixon -ixoff
 
 # start fish shell
-#[ -x /usr/bin/fish ] && exec fish
+[ -x /usr/bin/fish ] && exec fish
