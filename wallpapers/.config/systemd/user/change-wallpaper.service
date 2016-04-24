@@ -1,0 +1,10 @@
+[Unit]
+Description=Change wallpaper
+
+[Service]
+User=%I
+Type=simple
+ExecStart=/bin/bash /home/theodik/change-wallpaper.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+; generated_rule skype on all workspaces
+( if 
+( begin 
+( matches ( window_class ) "Skype" )
+) 
+( begin 
+( pin )
+( println "match" )
+)
+)

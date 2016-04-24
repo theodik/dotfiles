@@ -1,0 +1,25 @@
+[core]
+	excludesfile = /home/theodik/.gitignore_global
+	autocrlf = input
+	eol = lf
+	editor = vim
+[push]
+	default = simple
+[pull]
+    rebase = true
+[user]
+	name = Ondřej Svoboda
+	email = theodik@gmail.com
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	who = shortlog -s -- 
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+[branch]
+	autosetuprebase = always

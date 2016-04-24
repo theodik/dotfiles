@@ -1,0 +1,11 @@
+; generated_rule pidgin on all workspaces
+( if 
+( begin 
+( is ( window_role ) "conversation" )
+( is ( window_class ) "Pidgin" )
+) 
+( begin 
+( pin )
+( println "match" )
+)
+)
