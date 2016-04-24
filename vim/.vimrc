@@ -5,12 +5,12 @@ set nocompatible
 filetype off
 
 " Vundle, the plug-in manager for Vim
-" https://github.com/gmarik/vundle
+" https://github.com/VundleVim/Vundle.vim
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
