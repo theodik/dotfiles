@@ -106,4 +106,4 @@ else
    touch $PLATFORM_SPECIFIC_FILE
 end  
 
-
+rvm default
